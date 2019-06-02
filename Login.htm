@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <style>
+
+        input[type=number], input[type=password]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button{
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover{
+            opacity: 0.8;
+        }
+        .container{
+            padding: 16px;
+            height: 800px;
+        }
+        h1{
+            text-align: center;
+        }
+        .imgcontainer{
+            text-align: left;
+        }
+        img.avatar{
+            width: 10%;
+            border-radius: 25%;
+        }
+        body{
+            background-image: url("Background.jpg");
+        }
+        input{
+            font-size: 30px;
+        }
+        label{
+            font-size: 30px;
+        }
+        img{
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 25%;
+            height: 20%;
+        }
+    </style>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Please Sign in to use service</h1>
+        <div class="container">
+            <img src="avatar.jpg" alt="Avatar" class="avatar">
+            <div class="row">
+                <div class="col-25">
+                        <label for="Customer ID">Customer ID</label>
+                </div>
+                <div class="col-75">
+                        <input type="number" name="CustomerID" id="Customer ID" value="Customer ID">
+                </div>
+
+                <div class="col-25">
+                        <label for="Password">Password</label>
+                </div>
+
+                <div class="col-75">
+                        <input type="password" name="password" id="Password" value="Password">
+                </div>
+                <div class="row">
+                       <button type="submit" onclick="window.location.href = 'http://127.0.0.1:5500/New.htm'"">Login</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+z-index 
+iframe 
+search bar 
+
+Page 1: Have A picture as backgroud 
+Popup menu: Have booking, Login and Registration page 
+
+Page 2: Login 
+
+Page 3: Registration (Done) 
+
+Page 4: Have the Google map api and have search bar with z-index:
+Possible implementation: 
+1 - Have the Position and destination as separate pages and use like a next button to transit 
+2 - Have both in the same page. 
+
+Page 3: The thing that display the thing 
+		Thank you for booking! 
+	  Your ride will arrive in 10 minutes 

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body{
+        background-color: white
+    }
+    .container{
+        border-radius: 10px;
+        background-color: white;
+        padding: 50px;
+    }
+    input[type=submit]{
+        text-align: center;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        float:left;
+    }
+    input[type=submit]:hover{
+        background-color: #45a049
+    }
+    label{
+        display: inline-block;
+        width: 200px;
+        margin-right: 30px;
+        text-align:justify
+    }
+    input[type=text]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+    input[type=number]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+    input[type=date]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+    input[type=time]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+    h2{
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace
+
+    }
+    p{
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+    .button_button{
+            color: green;
+            border-radius: 4px;
+            z-index: 1;
+            position: absolute;
+            left: 45%;
+            top: 90%;
+            padding: 12px 28px;
+            border: 2px solid green
+    }
+</style>
+
+    <h2>Booking Page</h2>
+    <p>Fill in the blanks to finalise your booking</p>
+    <div class="container">
+            <label for="Date">Date</label>
+            <input type="date" name="date" placeholder="29/07"><br>
+
+            <label for="Time">Time of required arrival</label>
+            <input type="time" name="Time" placeholder="9:27AM or 9:27PM"><br>
+
+            <button class="button_button" type="submit" onclick="window.location.href = 'http://127.0.0.1:5500/Message.htm'">Submit</button>
+        </div>
+</html>
