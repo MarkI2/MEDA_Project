@@ -2,11 +2,11 @@
 <html>
 <style>
     body{
-        background-color: white
+        background-color: white;
+        background-image: url("Background.jpg")
     }
     .container{
         border-radius: 10px;
-        background-color: white;
         padding: 50px;
     }
     input[type=submit]{
@@ -25,28 +25,20 @@
         margin-right: 30px;
         text-align:justify
     }
-    input[type=text]{
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        box-sizing: border-box;
-    }
-    input[type=number]{
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        box-sizing: border-box;
-    }
     input[type=date]{
         width: 100%;
         padding: 12px 20px;
         margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
         box-sizing: border-box;
     }
     input[type=time]{
         width: 100%;
         padding: 12px 20px;
         margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
         box-sizing: border-box;
     }
     h2{
@@ -59,14 +51,18 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     }
     .button_button{
-            color: green;
+            color: white;
             border-radius: 4px;
             z-index: 1;
             position: absolute;
             left: 45%;
             top: 90%;
             padding: 12px 28px;
-            border: 2px solid green
+            border: 2px solid green;
+            background-color: green;
+    }
+    label{
+        font-size: 3vh;
     }
 </style>
 
@@ -76,7 +72,7 @@
             <label for="Date">Date</label>
             <input type="date" name="date" placeholder="29/07"><br>
 
-            <label for="Time">Time of required arrival</label>
+            <label for="Time">Arrival Time</label>
             <input type="time" name="Time" placeholder="9:27AM or 9:27PM"><br>
 
             <button class="button_button" type="submit" onclick="window.location.href = 'http://127.0.0.1:5500/Message.htm'">Submit</button>
