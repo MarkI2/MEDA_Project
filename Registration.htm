@@ -2,7 +2,10 @@
 <html>
 <style>
 
-body {font-family: Arial, Helvetica, sans-serif;}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("Background.jpg")
+}
 
 input[type=text], input[type=password], input[type=number]{
     width: 100%;
@@ -22,7 +25,6 @@ button{
     background: #e0ffff;
     color: #1E90FF;
     padding: 14px 20px;
-    margin: 8px 0;
     border: honeydew;
     cursor: pointer;
     width: 100%;
@@ -35,6 +37,7 @@ button:hover{
 
 .container{
     padding:16px;
+    background-image: url("Background.jpg")
 }
 button{
     background-color: #4CAF50;
@@ -52,7 +55,7 @@ button:hover{
 </style>
 <body>
 
-<form action="Reacting.php" style="border:1px solid #ccc" method="POST">
+<form action="Reacting.php" method="POST">
     <div class="container">
         <h1>Sign Up</h1>
         <p>Please fill in this form to create an account.</p>
@@ -78,17 +81,8 @@ button:hover{
 
         Medicare Number: 
         <input type="number" name="Medicare Number">
-        
-        <Select>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-        </Select>
-
-        <label>
-            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:10px"> Remember me
-        </label>
-
-        <p>By signing up you are agreeing to the terms and conditions <a href="http://www.google.com">Link</a></p>
+    
+        <p>By signing up you are agreeing to the terms and conditions <a href="#">Link</a></p>
 
         <div class="row">
                 <button type="submit" onclick="window.location.href = 'http://127.0.0.1:5500/New.htm'">Sign Up</button>
