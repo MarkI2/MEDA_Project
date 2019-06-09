@@ -6,9 +6,16 @@
 <style>
 body {
   font-family: "Lato", sans-serif;
-  background-image: url("google2.jpg");
+  background-color:  #fafcffb9;
   height: 100%;
   margin: 0;
+}
+iframe{
+  height: 100vh;
+  width: 93vw;
+  right: 0;
+  position: fixed;
+  z-index: 0;
 }
 .sidenav {
   height: 100%;
@@ -17,12 +24,12 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color:azure;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  z-index: 1;
 }
-
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -31,11 +38,9 @@ body {
   display: block;
   transition: 0.3s;
 }
-
 .sidenav a:hover {
   color: #f1f1f1;
 }
-
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -110,14 +115,15 @@ span{
   width: 0px;
 }
 .Button_button{
-  color: green;
+  color: white;
   border-radius: 4px;
   z-index: 1;
   position: absolute;
-  left: 50%;
+  left: 45%;
   top: 90%;
   padding: 12px 28px;
-  border: 2px solid green
+  border: 2px solid green;
+  background-color: green;
 }
 .search-box:hover > .search-txt{
   width: 240px;
@@ -134,6 +140,8 @@ span{
 </style>
 </head>
 <body>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13027.971350151915!2d149.12044458463998!3d-35.28130433462976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b164d69b05c9021%3A0x500ea6ea7695660!2sCanberra+ACT+2601!5e0!3m2!1sen!2sau!4v1560074683035!5m2!1sen!2sau" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
 <div class="search-box">
   <input class="search-txt" type="text" name="" placeholder="Pickup location">
   <a href="#" class="search-btn">
@@ -163,7 +171,6 @@ span{
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }
-
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
